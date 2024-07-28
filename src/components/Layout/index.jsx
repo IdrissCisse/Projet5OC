@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
-const Layout = ({ children }) => (
+const Layout = () => (
   <div>
     <header>
       <nav>
@@ -9,7 +9,9 @@ const Layout = ({ children }) => (
         <Link to="/about">About</Link>
       </nav>
     </header>
-    <main>{children}</main>
+    <main>
+      <Outlet />
+    </main>
     <footer>
       <p>Footer content</p>
     </footer>
