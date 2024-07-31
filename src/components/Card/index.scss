@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.67px;
+    text-align: left;
+    position: absolute;
+    height: 52px;
+    bottom: 20px;
+    left: 20px;
+    padding-right: 70px;
+    color: #fff;
+    text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
