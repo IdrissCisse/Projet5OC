@@ -3,6 +3,7 @@ import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import './App.scss';
 import accommodationsData from '../../assets/accommodations.json';
+import homeBanner from '../../assets/images/banner.svg';
 
 function Home() {
   const [logements, setLogements] = useState([]);
@@ -12,7 +13,11 @@ function Home() {
 
   return (
     <div className="App">
-      <Banner />
+      <Banner
+        image={homeBanner}
+        altText="Bannière de la page d'accueil"
+        text="Chez vous, partout et ailleurs"
+      />
       <div className="cards-container">
         {logements.map((logement) => (
           <Card
