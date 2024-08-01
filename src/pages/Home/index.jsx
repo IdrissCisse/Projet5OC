@@ -3,7 +3,7 @@ import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import './App.scss';
 import accommodationsData from '../../assets/accommodations.json';
-import homeBanner from '../../assets/images/banner.svg';
+import homeBannerImage from '../../assets/images/homeBanner.svg';
 
 function Home() {
   const [logements, setLogements] = useState([]);
@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className="App">
       <Banner
-        image={homeBanner}
+        image={homeBannerImage}
         altText="Bannière de la page d'accueil"
         text="Chez vous, partout et ailleurs"
       />

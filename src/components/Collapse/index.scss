@@ -1,6 +1,7 @@
 .collapse {
     border: none;
     border-radius: 5px;
+    padding: 0;
 
     &-header {
         display: flex;
@@ -50,20 +51,25 @@
     }
 
     &-content {
+        padding: 0 28px 0 20px;
         max-height: 0;
+        line-height: 25.67px;
+        font-size: 18px;
         overflow: hidden;
         opacity: 0;
         transform: scaleY(0);
         transform-origin: top;
         transition:
-            transform 0.3s ease,
+            transform 0.3s ease-out,
             opacity 0.3s ease,
-            max-height 0.3s ease;
+            max-height 0.3s ease,
+            padding 0.3s ease;
+
         &.open {
-            opacity: 1;
             padding: 25px 28px 20px 20px;
+            opacity: 1;
             background-color: #f6f6f673;
-            max-height: 300px;
+            max-height: 250px;
             transform: scaleY(1);
         }
     }
