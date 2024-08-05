@@ -1,0 +1,112 @@
+.logement {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 1240px;
+    margin-bottom: 50px;
+
+    .logement-slideshow {
+        height: 415px;
+        width: 100%;
+
+        img {
+            border-radius: 25px;
+        }
+    }
+
+    .logement-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 24px;
+
+        .logement-details-info {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .logement-details {
+                width: 100%;
+
+                .logement-title {
+                    font-size: 36px;
+                    font-weight: 500;
+                    color: #ff6060;
+                }
+
+                .logement-location {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+
+                .logement-tags {
+                    display: flex;
+                    gap: 10px;
+                    flex-wrap: wrap;
+
+                    .logement-tag {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-wrap: nowrap;
+                        background-color: #ff6060;
+                        border-radius: 10px;
+                        min-width: 105px;
+                        height: 25px;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 700;
+                        padding: 0 10px;
+                    }
+                }
+            }
+
+            .logement-info {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .logement-host {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 28px;
+                    width: 100%;
+
+                    .logement-host-details {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .logement-host-picture {
+                            width: 64px;
+                            height: 64px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .logement-host-name {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #ff6060;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logement-collapses {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 76px;
+
+            .collapse {
+                flex: 1;
+                line-height: 25.67px;
+            }
+        }
+    }
+}
