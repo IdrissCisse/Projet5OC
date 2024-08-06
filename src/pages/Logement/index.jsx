@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Slideshow from '../../components/Slideshow';
 import Collapse from '../../components/Collapse';
 import Rating from '../../components/Rating';
@@ -8,14 +8,21 @@ import './index.scss';
 
 const Logement = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [logement, setLogement] = useState(null);
 
   useEffect(() => {
     const foundLogement = accommodations.find((item) => item.id === id);
-    setLogement(foundLogement);
-  }, [id]);
+    if (!foundLogement) {
+      navigate('/notfound');
+    } else {
+      setLogement(foundLogement);
+    }
+  }, [id, navigate]);
 
-  if (!logement) return <div>Loading...</div>;
+  if (!logement) {
+    return null;
+  }
 
   return (
     <div className="logement">
@@ -38,7 +45,7 @@ const Logement = () => {
           <div className="logement-info">
             <div className="logement-host">
               <div className="logement-host-details">
-                <p className="logement-host-name">{logement.host.name}</p>{' '}
+                <p className="logement-host-name">{logement.host.name}</p>
                 <img
                   src={logement.host.picture}
                   alt={logement.host.name}
