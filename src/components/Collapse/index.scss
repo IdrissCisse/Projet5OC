@@ -18,6 +18,11 @@
         font-size: 18px;
         font-weight: 700;
         line-height: 25.67px;
+
+        @media (max-width: 767.98px) {
+            font-size: 13px;
+            line-height: 18.54px;
+        }
     }
 
     &-toggle {
@@ -45,6 +50,13 @@
             &.open {
                 transform: rotate(0);
             }
+
+            @media (max-width: 767.98px) {
+                font-size: 13px;
+                width: 16px;
+                height: 9.14px;
+                top: 10.29px;
+            }
         }
     }
 
@@ -69,6 +81,11 @@
             background-color: #f6f6f673;
             max-height: 250px;
             transform: scaleY(1);
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 12px;
+            line-height: 17.11px;
         }
     }
 }

@@ -10,6 +10,10 @@
         flex-direction: column;
         gap: 139px;
 
+        @media (max-width: 767.98px) {
+            gap: 113px;
+        }
+
         .error-title {
             font-size: 288px;
             font-weight: 700;
@@ -18,12 +22,26 @@
             height: 263px;
             padding: 20px 10px;
             margin-top: -5px;
+
+            @media (max-width: 767.98px) {
+                font-size: 96px;
+                height: fit-content;
+            }
         }
 
         .error-message {
             font-size: 24px;
             color: #ff6060;
             font-size: 36px;
+
+            @media (max-width: 767.98px) {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 25.67px;
+                text-wrap: wrap;
+                width: 260px;
+                height: 52px;
+            }
         }
 
         .error-link {
@@ -32,6 +50,11 @@
             margin-bottom: 139px;
             text-decoration: underline;
             font-weight: 500;
+
+            @media (max-width: 767.98px) {
+                font-size: 14px;
+                line-height: 19.96px;
+            }
         }
     }
 }

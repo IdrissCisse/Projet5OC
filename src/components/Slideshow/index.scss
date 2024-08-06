@@ -40,10 +40,24 @@
 
         &.prev {
             left: 23.36px;
+
+            @media (max-width: 767.98px) {
+                left: 6px;
+            }
         }
 
         &.next {
             right: 23.36px;
+
+            @media (max-width: 767.98px) {
+                right: 6px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            width: 11.67px;
+            height: 19.8px;
+            top: 50%;
         }
     }
 
@@ -56,5 +70,9 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 25.67px;
+
+        @media (max-width: 767.98px) {
+            display: none;
+        }
     }
 }
