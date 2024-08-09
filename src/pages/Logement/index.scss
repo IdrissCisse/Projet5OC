@@ -36,6 +36,9 @@
         width: 100%;
         gap: 24px;
 
+        @media (max-width: 1024px) {
+            width: 89.3%;
+        }
         @media (max-width: 767.98px) {
             width: 89.3%;
             gap: 13px;

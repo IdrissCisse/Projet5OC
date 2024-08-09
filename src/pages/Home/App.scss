@@ -14,6 +14,12 @@
   border-radius: 25px;
   background-color: #f6f6f6;
 
+  @media (max-width: 1024px) {
+    margin: auto;
+    width: 89.3%;
+    margin-top: 22px;
+    margin-bottom: 27px;
+  }
   @media (max-width: 767.98px) {
     background-color: #fff;
     flex-direction: column;
@@ -21,5 +27,6 @@
     row-gap: 20px;
     padding: 0;
     align-items: center;
+    width: 100%;
   }
 }
