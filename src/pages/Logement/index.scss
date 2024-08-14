@@ -12,11 +12,14 @@
 
     .logement-slideshow {
         height: 415px;
-        width: 89.3%;
+        width: 100%;
 
+        @media (max-width: 1024px) {
+            width: 89.3%;
+        }
         @media (max-width: 767.98px) {
             padding: 0 20px;
-
+            width: 89.3%;
             height: 255px;
         }
 
