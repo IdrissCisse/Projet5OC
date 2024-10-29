@@ -1,7 +1,7 @@
 import React from 'react';
 import Collapse from '../../components/Collapse';
 import Banner from '../../components/Banner';
-import aboutBannerImage from '../../assets/images/aboutBanner.svg';
+import aboutBannerImage from '../../assets/images/aboutBanner.webp';
 import './index.scss';
 
 const About = () => {

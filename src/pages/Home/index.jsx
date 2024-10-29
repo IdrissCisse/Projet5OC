@@ -3,7 +3,7 @@ import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import './App.scss';
 import accommodationsData from '../../assets/accommodations.json';
-import homeBannerImage from '../../assets/images/homeBanner.svg';
+import homeBannerImage from '../../assets/images/homeBanner.webp';
 
 function Home() {
   const [logements, setLogements] = useState([]);
