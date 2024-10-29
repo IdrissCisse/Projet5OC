@@ -7,7 +7,7 @@ import NotFound from '../../pages/NotFound';
 import Layout from '../Layout';
 
 const AppRouter = () => (
-  <Router>
+  <Router basename="/Projet5OC">
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
